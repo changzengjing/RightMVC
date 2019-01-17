@@ -11,7 +11,7 @@ MVC本身的概念概念很简单，但是没根本上理解数据流动在 MVC 
 ### 例子
 一个非常简单的例子：To Do列表。通过导航栏按钮添加一个条目，通过Swipe cell 的方式删除条目，同时只能存在 10 条待办项目。
 
-![MVC](https://github.com/KQAR/RightMVC/blob/master/pic/屏幕录制%202019-01-17%20下午3.08.57.mov)
+![MVC](https://github.com/KQAR/RightMVC/blob/master/pic/屏幕录制%202019-01-17%20下午5.32.22.mov)
 
 喵神用Swift实现的例子，这里我用OC来实现，语法有差异，实现的复杂层度上有差异。
 
