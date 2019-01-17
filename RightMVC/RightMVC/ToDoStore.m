@@ -47,7 +47,7 @@
 }
 
 /**
- 添加模型
+ 添加
  */
 - (void)append:(ToDoItem *)toDoItem {
     [[self mutableArrayValueForKey:@"items"] addObject:toDoItem];
@@ -58,7 +58,7 @@
 }
 
 /**
- 删除模型
+ 删除
  */
 - (void)removeToDoItem:(ToDoItem *)toDoItem {
     [[self mutableArrayValueForKey:@"items"] removeObject:toDoItem];
