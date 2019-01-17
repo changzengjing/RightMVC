@@ -11,7 +11,7 @@ MVC本身的概念概念很简单，但是没根本上理解数据流动在 MVC 
 ### 例子
 一个非常简单的例子：To Do列表。通过导航栏按钮添加一个条目，通过Swipe cell 的方式删除条目，同时只能存在 10 条待办项目。
 
-<a href='&&&SFLOCALFILEPATH&&&%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%202019-01-17%20%E4%B8%8B%E5%8D%883.08.57.mov'>%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%202019-01-17%20%E4%B8%8B%E5%8D%883.08.57.mov</a>
+![MVC](https://github.com/KQAR/RightMVC/blob/master/pic/屏幕录制%202019-01-17%20下午3.08.57.mov)
 
 喵神用Swift实现的例子，这里我用OC来实现，语法有差异，实现的复杂层度上有差异。
 
@@ -136,7 +136,7 @@ cell删除功能
 上面我们选择的Model不是一个那么有效的Model，数据流动的方式也存在风险，是对MVC的误用。
 
 附上一张经典图：
-![MVC](https://github.com/KQAR/RightMVC/blob/master/pic/mvc.png?raw=true)
+![MVC](https://github.com/KQAR/RightMVC/blob/master/pic/mvc.png?raw=true"MVC")
 
 上面的例子把Model放在控制器中，应该把它分离出来了
 
