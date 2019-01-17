@@ -133,7 +133,7 @@ cell删除功能
 如果还有后台服务器交互，那么情况会更复杂。UI操作直接更新UI，然而我们需要根据请求返回的状态更新UI，数据同步还得考虑。
    
 ### 改善
-上面我们选择的Model不是一个那么有效的mModel，数据流动的方式也存在风险，是对MVC的误用。
+上面我们选择的Model不是一个那么有效的Model，数据流动的方式也存在风险，是对MVC的误用。
 
 附上一张经典图：
 ![MVC](https://onevcat.com/assets/images/2018/mvc.png"MVC")
@@ -141,7 +141,7 @@ cell删除功能
 上面的例子把Model放在控制器中，应该把它分离出来了
 
 ### 单独的Model
-ToDoStore
+`ToDoStore`
 ```
 /**
 添加
@@ -183,7 +183,7 @@ ToDoStore
 接下里，保证数据的单向流动。避免UI行为直接影响UI，而是由 Model 的状态通过 Controller 来确定 UI 状态。
 按照上面的MVC图，Model使用Notification来向Controller发送通知，Controller再去更新UI。
 
-在ToDoStore中
+在`ToDoStore`中
 ```
 - (NSMutableArray *)items {
     if (_items == nil) {
@@ -218,7 +218,7 @@ ToDoStore
 ```
 注册一个观察者，观察数组变化，当数组变化时，发送包含数组变化行为的通知。
 
-在ToDoListViewController中订阅这个通知，然后将消息内容反馈给UI
+在`ToDoListViewController`中订阅这个通知，然后将消息内容反馈给UI
 ```
 // 懒加载 toDoStore模型管理待办事项
 - (ToDoStore *)toDoStore {
