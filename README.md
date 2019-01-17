@@ -136,7 +136,7 @@ cell删除功能
 上面我们选择的Model不是一个那么有效的Model，数据流动的方式也存在风险，是对MVC的误用。
 
 附上一张经典图：
-![MVC](https://onevcat.com/assets/images/2018/mvc.png"MVC")
+![MVC](https://github.com/KQAR/RightMVC/blob/master/pic/mvc.png?raw=true)
 
 上面的例子把Model放在控制器中，应该把它分离出来了
 
